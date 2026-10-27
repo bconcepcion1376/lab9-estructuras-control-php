@@ -259,7 +259,7 @@ $total = $base + ($base * ITBMS);
 
     <section id="ej4">
       <h2>Ejercicio 4 · Mes y estación</h2>
-      <p id="ej4-res"><!-- TODO 4 --></p>
+      <p id="ej4-res"> Mes: <?= $nombreMes ?> | Estación: <?= $estacion ?> <!-- TODO 4 --></p>
     </section>
 
     <section id="ej5">
