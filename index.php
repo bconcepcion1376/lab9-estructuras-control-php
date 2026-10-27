@@ -15,6 +15,20 @@ const APELLIDO = "Concepción";
 // TODO 0.2: crea $nombreCompleto, $edad, $dia, $mes, $nota1, $nota2, $nota3, $monto,
 //           $esMiembro, $hora, $huella, $descuento y $vacio (fórmulas en el documento).
 
+$nombreCompleto = NOMBRE . " " . APELLIDO;
+$edad = 8 + (SEMILLA % 70);
+$dia = (SEMILLA % 7) + 1;
+$mes = (SEMILLA % 12) + 1;
+$nota1 = 40 + (SEMILLA % 61);
+$nota2 = 40 + ((SEMILLA * 3) % 61);
+$nota3 = 40 + ((SEMILLA * 7) % 61);
+$monto = 20 + (SEMILLA % 181);
+$esMiembro = (SEMILLA % 2) == 0;
+$hora = SEMILLA % 24;
+$huella = (SEMILLA * 13 + 91) % 1000;
+$descuento = SEMILLA * 0.001;
+$vacio = null;
+
 // ---------- EJERCICIO 1 · Boleto de cine (if / elseif / else) ----------
 // TODO 1
 
