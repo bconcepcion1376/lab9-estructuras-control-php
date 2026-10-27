@@ -254,7 +254,7 @@ $total = $base + ($base * ITBMS);
 
     <section id="ej3">
       <h2>Ejercicio 3 · Día de la semana</h2>
-      <p id="ej3-res"><!-- TODO 3 --></p>
+      <p id="ej3-res"> Día: <?= $nombreDia ?> | Tipo: <?= $tipoDia ?><!-- TODO 3 --></p>
     </section>
 
     <section id="ej4">
