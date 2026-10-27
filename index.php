@@ -236,14 +236,14 @@ $total = $base + ($base * ITBMS);
           <tr><td>$esMiembro</td><td><?= gettype($esMiembro) ?></td></tr>
           <tr><td>$descuento</td><td><?= gettype($descuento) ?></td></tr>
           <tr><td>$vacio</td><td><?= gettype($vacio) ?></td></tr>
-          
+
         </tbody>
       </table>
     </section>
 
     <section id="ej1">
       <h2>Ejercicio 1 · Boleto de cine</h2>
-      <p id="ej1-res"><!-- TODO 1 --></p>
+      <p id="ej1-res">Categoría: <?= $categoria ?> | Precio final: B/. <?= number_format($precio, 2) ?> | Miércoles 50%: <?= $esMiercoles ? 'Sí' : 'No' ?><!-- TODO 1 --></p>
     </section>
 
     <section id="ej2">
