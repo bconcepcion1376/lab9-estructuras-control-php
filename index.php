@@ -236,6 +236,7 @@ $total = $base + ($base * ITBMS);
           <tr><td>$esMiembro</td><td><?= gettype($esMiembro) ?></td></tr>
           <tr><td>$descuento</td><td><?= gettype($descuento) ?></td></tr>
           <tr><td>$vacio</td><td><?= gettype($vacio) ?></td></tr>
+          
         </tbody>
       </table>
     </section>
