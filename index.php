@@ -249,7 +249,7 @@ $total = $base + ($base * ITBMS);
     <section id="ej2">
       <h2>Ejercicio 2 · Notas</h2>
       <!-- TODO CSS-4: agrega la clase "ok" o "error" con PHP según el estado -->
-      <p id="ej2-res" class="resultado"><!-- TODO 2 --></p>
+      <p id="ej2-res" class="resultado" <?= $claseNota ?>">Promedio: <?= number_format($promedio, 2) ?> | Letra: <?= $letra ?> | Estado: <?= $estado ?> | Cuadro de honor: <?= $honor ?> <!-- TODO 2 --></p>
     </section>
 
     <section id="ej3">
