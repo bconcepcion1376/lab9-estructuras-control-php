@@ -272,6 +272,6 @@ $total = $base + ($base * ITBMS);
 
   </main>
 
-  <footer id="firma"><!-- TODO 0.7: "Lab 9 · Nombre Apellido · Semilla N" --></footer>
+  <footer id="firma">Lab 9 · <?= $nombreCompleto ?> · Semilla <?= SEMILLA ?> <!-- TODO 0.7: "Lab 9 · Nombre Apellido · Semilla N" --></footer>
 </body>
 </html>
