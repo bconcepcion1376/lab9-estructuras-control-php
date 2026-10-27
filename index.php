@@ -199,15 +199,25 @@ $total = $base + ($base * ITBMS);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- TODO 0.3: <meta name="lab9-huella" content="..."> con el valor de $huella -->
+  <meta name="lab9-huella" content="<?= $huella ?>">
   <title>Lab 9 · Estructuras de control</title>
   <!-- TODO CSS-1: enlaza css/estilos.css (CSS externo) -->
+  <link rel="stylesheet" href="css/estilos.css">
+
   <!-- TODO CSS-2: agrega un <style> interno con al menos 2 reglas -->
+    <style>
+    h2 { color: #1f3a5f; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+  </style>
+
 </head>
+
 <body>
   <header>
     <!-- TODO CSS-3: agrega un atributo style (CSS en línea) a este h1 -->
-    <h1>Laboratorio #9 · Estructuras de control</h1>
-    <p id="autor"><!-- TODO 0.4: "Autor: Nombre Apellido" --></p>
+    <h1 style="margin: 8px 0; font-size: 1.6rem;">Laboratorio #9 · Estructuras de control</h1>
+    <p id="autor">Autor: <?= $nombreCompleto ?><!-- TODO 0.4: "Autor: Nombre Apellido" --></p>
   </header>
 
   <!-- TODO 0.5: el id de <main> es "lab9-" + tu apellido en minúsculas, sin tildes (ver documento) -->
