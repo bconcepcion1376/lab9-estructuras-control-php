@@ -159,6 +159,39 @@ $estacion = match ($mes) {
 
 // ---------- EJERCICIO 5 · Caja de la tienda (reto integrador) ----------
 // TODO 5
+const ITBMS = 0.07;
+
+// Paso 1: porcentaje por monto
+if ($monto >= 150) {
+    $pct = 15;
+} elseif ($monto >= 100) {
+    $pct = 10;
+} elseif ($monto >= 50) {
+    $pct = 5;
+} else {
+    $pct = 0;
+}
+
+// Paso 2: miembro suma 5 puntos
+if ($esMiembro) {
+    $pct = $pct + 5;
+}
+
+// Paso 3: base con descuento
+$base = $monto - ($monto * $pct / 100);
+
+// Paso 4: recargo nocturno (22 o más, O antes de las 6)
+if ($hora >= 22 || $hora < 6) {
+    $base = $base + ($base * 0.03);
+    $recargo = "Sí";
+} else {
+    $recargo = "No";
+}
+
+// Paso 5: total con ITBMS
+$total = $base + ($base * ITBMS);
+
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
