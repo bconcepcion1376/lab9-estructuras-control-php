@@ -135,6 +135,27 @@ switch ($dia) {
 
 // ---------- EJERCICIO 4 · Mes y estación (match) ----------
 // TODO 4
+$nombreMes = match ($mes) {
+    1 => "Enero",
+    2 => "Febrero",
+    3 => "Marzo",
+    4 => "Abril",
+    5 => "Mayo",
+    6 => "Junio",
+    7 => "Julio",
+    8 => "Agosto",
+    9 => "Septiembre",
+    10 => "Octubre",
+    11 => "Noviembre",
+    12 => "Diciembre",
+    default => "Desconocido",
+};
+
+$estacion = match ($mes) {
+    12, 1, 2, 3, 4 => "Seca",
+    5, 6, 7, 8, 9, 10, 11 => "Lluviosa",
+    default => "Desconocida",
+};
 
 // ---------- EJERCICIO 5 · Caja de la tienda (reto integrador) ----------
 // TODO 5
