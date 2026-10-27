@@ -61,6 +61,32 @@ if ($dia == 3) {
 
 // ---------- EJERCICIO 2 · Notas (elseif, ternario, &&) ----------
 // TODO 2
+$promedio = ($nota1 + $nota2 + $nota3) / 3;
+
+if ($promedio >= 90) {
+    $letra = "A";
+} elseif ($promedio >= 80) {
+    $letra = "B";
+} elseif ($promedio >= 70) {
+    $letra = "C";
+} elseif ($promedio >= 60) {
+    $letra = "D";
+} else {
+    $letra = "F";
+}
+
+// Ternario para el estado
+$estado = ($promedio >= 70) ? "Aprobado" : "Reprobado";
+
+// Cuadro de honor: promedio >= 90 Y las tres notas >= 80
+if ($promedio >= 90 && $nota1 >= 80 && $nota2 >= 80 && $nota3 >= 80) {
+    $honor = "Sí";
+} else {
+    $honor = "No";
+}
+
+// Clase CSS según el estado (ternario)
+$claseNota = ($estado == "Aprobado") ? "ok" : "error";
 
 // ---------- EJERCICIO 3 · Día de la semana (switch) ----------
 // TODO 3
