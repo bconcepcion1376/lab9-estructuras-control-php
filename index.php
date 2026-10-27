@@ -221,7 +221,7 @@ $total = $base + ($base * ITBMS);
   </header>
 
   <!-- TODO 0.5: el id de <main> es "lab9-" + tu apellido en minúsculas, sin tildes (ver documento) -->
-  <main id="">
+  <main id="lab9-concepcion-benjamin">
 
     <section id="ej0">
       <h2>Ejercicio 0 · Tipos de datos</h2>
@@ -231,6 +231,11 @@ $total = $base + ($base * ITBMS);
         </thead>
         <tbody>
           <!-- TODO 0.6: 5 filas <tr> con el nombre de la variable y su gettype() -->
+          <tr><td>$nombreCompleto</td><td><?= gettype($nombreCompleto) ?></td></tr>
+          <tr><td>$edad</td><td><?= gettype($edad) ?></td></tr>
+          <tr><td>$esMiembro</td><td><?= gettype($esMiembro) ?></td></tr>
+          <tr><td>$descuento</td><td><?= gettype($descuento) ?></td></tr>
+          <tr><td>$vacio</td><td><?= gettype($vacio) ?></td></tr>
         </tbody>
       </table>
     </section>
